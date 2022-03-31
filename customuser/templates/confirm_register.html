@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    body{
+        font: 1em sans-serif;
+        text-align: center;
+        }
+    img {
+        max-width: 50%;
+        height: 50px;
+        transform: rotate(360deg);
+        display: flex;
+        height: 500px;
+        width: 100%;
+           
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm_register</title>
+</head>
+<body>
+    <h2>आप हमारी वेबसाइट में रजिस्टर कर चुके हैं... कृपा कर अब यहां क्लिक करें__<a href="{% url 'login' %}"><b>Click_here</b></a></h2>
+    <div class='ok'><img src="{% static 'images/funny.png' %}"></div>
+</body>
+</html> 
